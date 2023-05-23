@@ -18,10 +18,9 @@ export function MainNav({ items, children }: MainNavProps) {
   const segment = useSelectedLayoutSegment();
 
   return (
-    <div className='flex gap-6 md:gap-10'>
+    <div className='flex justify-center gap-6 md:gap-10'>
       <Link href='/' className='hidden items-center space-x-2 md:flex'>
-        <Icons.payment className='text-black' />
-        <span className='hidden text-gray-700 font-bold sm:inline-block'>
+        <span className='font-heading text-sm hidden text-gray-700 font-bold sm:inline-block'>
           {siteConfig.name}
         </span>
       </Link>

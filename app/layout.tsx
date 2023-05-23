@@ -14,7 +14,7 @@ const fontSans = FontSans({
 
 // Font files can be colocated inside of `pages`
 const fontHeading = localFont({
-  src: "../assets/fonts/CalSans-SemiBold.woff2",
+  src: "../assets/fonts/Colabero.woff",
   variable: "--font-heading",
 })
 
@@ -34,14 +34,14 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased',
+          'min-h-screen bg-noise font-sans antialiased',
           fontSans.variable,
           fontHeading.variable
         )}
       >
         {' '}
-        <header className='container z-40 bg-background px-5'>
-          <div className='flex h-20 items-center justify-between py-6'>
+        <header className='container z-40 px-5'>
+          <div className='flex h-20 items-center justify-center py-6'>
             <MainNav items={marketingConfig.mainNav} />
           </div>
         </header>

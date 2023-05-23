@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-noise {
+  background-image: url('/images/noise.png');
+  background-color: #eae6dc;
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
